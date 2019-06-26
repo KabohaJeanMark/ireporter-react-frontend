@@ -1,12 +1,12 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { signupType } from './types';
+import { loginType } from './types';
 
-export const postSignup = (signupUrl, signupDetails, props) => dispatch =>
-  axios.post(signupUrl, signupDetails).then(response => {
+export const postLogin = (loginUrl, loginDetails, props) => dispatch =>
+  axios.post(loginUrl, loginDetails).then(response => {
     const { status } = response;
-    if (status === 201) {
-      dispatch({ type: signupType.SIGNUP_SUCCESS, payload: response.data });
+    if (status === 200) {
+      dispatch({ type: loginType.LOGIN_SUCCESS, payload: response.data });
       toast.dismiss();
       toast.success("You have signed up successfully", {
         hideProgressBar: false, autoClose: 3000
@@ -16,9 +16,9 @@ export const postSignup = (signupUrl, signupDetails, props) => dispatch =>
   })
     .catch((error) => {
       if (error.response.status === 400) {
-        dispatch({ type: signupType.SIGNUP_ERROR, payload: error.response.data });
+        dispatch({ type: loginType.LOGIN_ERROR, payload: error.response.data });
         toast.dismiss();
-        toast.error("This email, username and password cannot be used to sign up", {
+        toast.error("The username or password is incorrect", {
           hideProgressBar: false, autoClose: 3000
         });
       }

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import LoginPresentationComponent from '../components/LoginComponent';
 import PropTypes from 'prop-types';
 import {loginUrl} from '../utils';
-import {postLogin} from '../redux/actions/SignupActions';
+import {postLogin} from '../redux/actions/LoginActions';
 
 
 export class Login extends Component {

@@ -5,6 +5,7 @@ import store from '../../redux/store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from '../Home/Home';
+import Profile from '../Profile/ProfileComponent';
 import SignUp  from '../../containers/Signup';
 import Login from '../../containers/Login';
 
@@ -18,6 +19,8 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route exact path="/signup" component={SignUp}/>
           <Route exact path="/login" component={Login}/>
+          <Route exact path="/profile" component={Profile}/>
+
       </Router>
       
       </Provider>
