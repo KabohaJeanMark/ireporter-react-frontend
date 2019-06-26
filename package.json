@@ -4,9 +4,10 @@
   "description": "A react UI approach to ireporter front end application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack-dev-server --open --hot --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,21 @@
     "url": "https://github.com/KabohaJeanMark/ireporter-react-frontend/issues"
   },
   "homepage": "https://github.com/KabohaJeanMark/ireporter-react-frontend#readme",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mock__/mockFile.js",
+      "\\.(css|less)$": "<rootDir>/__mock__/mockStyle.js"
+    }
+  },
   "dependencies": {
     "axios": "^0.19.0",
     "css": "^2.2.4",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "express": "^4.17.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
     "loader": "^2.1.1",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",

@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from '../Home/Home';
 import SignUp  from '../../containers/Signup';
+import Login from '../../containers/Login';
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
       <Router>
           <Route exact path="/" component={Home}/>
           <Route exact path="/signup" component={SignUp}/>
+          <Route exact path="/login" component={Login}/>
       </Router>
       
       </Provider>

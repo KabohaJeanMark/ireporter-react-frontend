@@ -5,10 +5,10 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
   return (
     <>
       <Navbar />
-      <div className="create-signup" align="center">
-            <div className="card">
+      <div align="center" >
+            <div className="card" >
               <form onSubmit={handleSubmit}>
-                <div className="form-group">
+              <div>
                   <input
                     type="text"
                     name="first_name"
@@ -17,7 +17,7 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
                     required
                     onChange={(e) => handleChange(e)}/>
                 </div>
-                <div className="form-group">
+                <div>
                   <input
                     type="text"
                     name="last_name"
@@ -26,7 +26,7 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
                     required
                     onChange={(e) => handleChange(e)}/>
                 </div>
-                <div className="form-group">
+                <div>
                   <input
                   
                     type="text"
@@ -36,7 +36,7 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
                     required
                     onChange={e => handleChange(e)}/>
                 </div>
-                <div className="form-group">
+                <div>
                 <input                  
                     type="text"
                     name="email"
@@ -45,7 +45,7 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
                     required
                     onChange={e => handleChange(e)}/>
                 </div>
-                <div className="form-group">
+                <div>
                   <input
                     type="text"
                     name="username"
@@ -54,7 +54,7 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
                     required
                     onChange={e => handleChange(e)}/>
                 </div>
-                <div className="form-group">
+                <div>
                   <input
                     type="text"
                     name="phone_number"
@@ -63,7 +63,7 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
                     required
                     onChange={e => handleChange(e)}/>
                 </div>
-                <div className="form-group">
+                <div>
                   <input
                     type="text"
                     name="password"
@@ -72,7 +72,7 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
                     required
                     onChange={e => handleChange(e)}/>
                 </div>
-                <button type="submit" className="btn postarticle-btn btn-outline-primary">Sign up</button>
+                <button type="submit">Sign up</button>
               </form>
             </div>
           </div>
