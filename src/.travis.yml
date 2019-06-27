@@ -6,9 +6,9 @@ cache:
  - node_modules
 env:
  global:
-   - CC_TEST_REPORTER_ID=d1409c1d684f1eb5aef793ac276677bd56fd04bb25d34d894f36f1af65292c39
+   - CC_TEST_REPORTER_ID=$reporter_id
 before_script:
- - export CC_TEST_REPORTER_ID=d1409c1d684f1eb5aef793ac276677bd56fd04bb25d34d894f36f1af65292c39
+ - export CC_TEST_REPORTER_ID=$reporter_id
  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
  - chmod +x ./cc-test-reporter
  - ./cc-test-reporter before-build
