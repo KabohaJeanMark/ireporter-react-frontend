@@ -17,7 +17,7 @@ export default function (state = initialState, action) {
   case SIGNUP_ERROR:
     return {
       ...state,
-      errors: "Your session token has expired"
+      errors: "You cannot sign up with provided username, email and password"
     };
 
   default:

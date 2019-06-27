@@ -6,31 +6,31 @@ const LoginPresentationComponent = ({ handleSubmit, handleChange}) => {
     <>
       <Navbar />
       <div align="center">
-            <div className="card">
-              <form onSubmit={handleSubmit}>
-                <div>
-                  <input
-                    type="text"
-                    name="username"
-                    id="username-input"
-                    placeholder="username"
-                    required
-                    onChange={e => handleChange(e)}/>
-                </div>
-                
-                <div>
-                  <input
-                    type="text"
-                    name="password"
-                    id="password-input"
-                    placeholder="password"
-                    required
-                    onChange={e => handleChange(e)}/>
-                </div>
-                <button type="submit">Log in</button>
-              </form>
+        <div className="card">
+          <form onSubmit={handleSubmit}>
+            <div>
+              <input
+                type="text"
+                name="username"
+                id="username-input"
+                placeholder="username"
+                required
+                onChange={e => handleChange(e)}/>
             </div>
-          </div>
+                
+            <div>
+              <input
+                type="password"
+                name="password"
+                id="password-input"
+                placeholder="password"
+                required
+                onChange={e => handleChange(e)}/>
+            </div>
+            <button type="submit">Log in</button>
+          </form>
+        </div>
+      </div>
     </>
   );
 };

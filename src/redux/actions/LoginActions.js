@@ -8,7 +8,7 @@ export const postLogin = (loginUrl, loginDetails, props) => dispatch =>
     if (status === 200) {
       dispatch({ type: loginType.LOGIN_SUCCESS, payload: response.data });
       toast.dismiss();
-      toast.success("You have signed up successfully", {
+      toast.success("You have logged in successfully", {
         hideProgressBar: false, autoClose: 3000
       });
       document.location.href = '/profile';
