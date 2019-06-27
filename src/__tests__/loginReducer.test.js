@@ -28,5 +28,4 @@ describe('on failure login', () => {
         errors: "Your username or password is incorrect"
     });
   });
-  
 });
