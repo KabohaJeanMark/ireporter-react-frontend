@@ -14,19 +14,19 @@ class App extends Component {
   render(){
     return(
       <Provider store={store}>
-      <ToastContainer />
-      <Router>
+        <ToastContainer />
+        <Router>
           <Route exact path="/" component={Home}/>
           <Route exact path="/signup" component={SignUp}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/profile" component={Profile}/>
 
-      </Router>
+        </Router>
       
       </Provider>
     
     );
   }
-  };
+}
 
 export default App;
