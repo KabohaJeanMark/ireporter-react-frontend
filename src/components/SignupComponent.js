@@ -6,76 +6,76 @@ const SignUpPresentationComponent = ({ handleSubmit, handleChange}) => {
     <>
       <Navbar />
       <div align="center" >
-            <div className="card" >
-              <form onSubmit={handleSubmit}>
-              <div>
-                  <input
-                    type="text"
-                    name="first_name"
-                    id="firstname-input"
-                    placeholder="first name"
-                    required
-                    onChange={(e) => handleChange(e)}/>
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="last_name"
-                    id="lastname-input"
-                    placeholder="last name"
-                    required
-                    onChange={(e) => handleChange(e)}/>
-                </div>
-                <div>
-                  <input
-                  
-                    type="text"
-                    name="othernames"
-                    id="othername-input"
-                    placeholder="other name"
-                    required
-                    onChange={e => handleChange(e)}/>
-                </div>
-                <div>
-                <input                  
-                    type="text"
-                    name="email"
-                    id="email-input"
-                    placeholder="email"
-                    required
-                    onChange={e => handleChange(e)}/>
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="username"
-                    id="username-input"
-                    placeholder="username"
-                    required
-                    onChange={e => handleChange(e)}/>
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="phone_number"
-                    id="phonenumber-input"
-                    placeholder="phone number"
-                    required
-                    onChange={e => handleChange(e)}/>
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="password"
-                    id="password-input"
-                    placeholder="password"
-                    required
-                    onChange={e => handleChange(e)}/>
-                </div>
-                <button type="submit">Sign up</button>
-              </form>
+        <div className="card" >
+          <form onSubmit={handleSubmit}>
+            <div>
+              <input
+                type="text"
+                name="first_name"
+                id="firstname-input"
+                placeholder="first name"
+                required
+                onChange={(e) => handleChange(e)}/>
             </div>
-          </div>
+            <div>
+              <input
+                type="text"
+                name="last_name"
+                id="lastname-input"
+                placeholder="last name"
+                required
+                onChange={(e) => handleChange(e)}/>
+            </div>
+            <div>
+              <input
+                  
+                type="text"
+                name="othernames"
+                id="othername-input"
+                placeholder="other name"
+                required
+                onChange={e => handleChange(e)}/>
+            </div>
+            <div>
+              <input                  
+                type="text"
+                name="email"
+                id="email-input"
+                placeholder="email"
+                required
+                onChange={e => handleChange(e)}/>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="username"
+                id="username-input"
+                placeholder="username"
+                required
+                onChange={e => handleChange(e)}/>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="phone_number"
+                id="phonenumber-input"
+                placeholder="phone number"
+                required
+                onChange={e => handleChange(e)}/>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                id="password-input"
+                placeholder="password"
+                required
+                onChange={e => handleChange(e)}/>
+            </div>
+            <button type="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
     </>
   );
 };

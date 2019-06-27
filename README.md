@@ -17,7 +17,7 @@ A live demo of the application is found [here](https://ireporterreactfront.herok
 - npm 
 
 ### Getting started
-1. Clone this [repository](https://github.com/andela/ah-frontend-invictus.git)
+1. Clone this [repository](https://github.com/KabohaJeanMark/ireporter-react-frontend.git)
 
 2. Use your package manager to install dependencies
 - `npm install`

@@ -16,6 +16,7 @@ export const postSignup = (signupUrl, signupDetails, props) => dispatch =>
   })
     .catch((error) => {
       if (error.response.status === 400) {
+        console.log(error.response.data)
         dispatch({ type: signupType.SIGNUP_ERROR, payload: error.response.data });
         toast.dismiss();
         toast.error("This email, username and password cannot be used to sign up", {

@@ -16,7 +16,7 @@ export class Login extends Component {
     };
   }
 
-  handleChange = (event) => {
+  handleChange=(event) => {
     this.setState({
       [event.target.name]: event.target.value
     });
@@ -43,14 +43,8 @@ export class Login extends Component {
 Login.propTypes = {
   handleSubmit: PropTypes.func,
   handleChange: PropTypes.func,
-  first_name: PropTypes.string,
-  last_name: PropTypes.string,
   username: PropTypes.string,
-  othernames: PropTypes.string,
-  phone_number:PropTypes.string,
-  email:PropTypes.string,
-  password:PropTypes.string,
-  postLogin: PropTypes.func
+  password:PropTypes.string
 };
 
 export default connect(null, {postLogin})(Login);

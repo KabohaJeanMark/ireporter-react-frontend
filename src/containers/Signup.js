@@ -20,18 +20,9 @@ export class SignUp extends Component {
       password:""
     };
   }
-  checkBlank = () => {
-    const { first_name, last_name, othernames, username, phone_number,email, password } = this.state;
-    if (first_name === '' || last_name === '' || othernames === ''||username === '' || phone_number === '' || email === ''|| password ==='') {
-      toast.dismiss();
-      toast.error("All fields must be filled", {
-        hideProgressBar: false,
-        autoClose: 3000
-      });
-    }
-  };
 
-  handleChange = (event) => {
+
+  handleChange=(event) => {
     this.setState({
       [event.target.name]: event.target.value
     });
