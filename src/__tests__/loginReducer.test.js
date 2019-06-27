@@ -30,26 +30,3 @@ describe('on failure login', () => {
   });
   
 });
-
-describe('on success login', () => {
-    let newState;
-    const initialState = {
-      loggedInUser: '',
-      errors: ''
-    };
-    it('should login success', () => {
-      const payload = {
-          "message":"Please enter valid username and password","status":400
-      };
-      newState = reducer(undefined,
-        {
-          type: loginType.LOGIN_SUCCESS,
-          payload: payload
-        });
-      expect(newState).toEqual({
-          ...initialState,
-          errors: "Your username or password is incorrect"
-      });
-    });
-    
-  });
